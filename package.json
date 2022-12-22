@@ -1,0 +1,24 @@
+{
+  "name": "base64tourl",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://hashibutogarasu.github.io/Base64toURL-/",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "npm run build && gh-pages -d build -m \"Updates --skip-ci\""
+  },
+  "dependencies": {
+    "@next/font": "13.0.7",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.0.7",
+    "next": "13.0.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
