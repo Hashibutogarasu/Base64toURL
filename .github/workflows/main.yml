@@ -1,4 +1,8 @@
-name: Build and deploy website
+# Sample workflow for building and deploying a Next.js site to GitHub Pages
+#
+# To get started with Next.js see: https://nextjs.org/docs/getting-started
+#
+name: Deploy to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -76,21 +80,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
-      - name: Build Jekyll for GitHub Pages
-        uses: actions/jekyll-build-pages@v1.0.6
-        with:
-          # Directory where the source files reside.
-          source: ./ # optional, default is ./
-          # Output directory of the build. Although it can be nested inside the source, it cannot be the same as the source directory.
-          destination: ./ # optional, default is ./_site
-          # Publishes posts with a future date. When set to true, the build is made with the --future option which overrides the future option that may be set in a Jekyll configuration file.
-          #future: # optional
-          # The SHA-1 of the git commit for which the build is running. Default to GITHUB_SHA.
-          #build_revision: # optional, default is ${{ github.sha }}
-          # Verbose output
-          #verbose: # optional, default is true
-          # GitHub token
-          #token: # default is ${{ github.token }}
+
   # Deployment job
   deploy:
     environment:
