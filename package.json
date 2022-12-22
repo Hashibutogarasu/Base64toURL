@@ -5,7 +5,7 @@
   "homepage": "https://hashibutogarasu.github.io/Base64toURL/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
