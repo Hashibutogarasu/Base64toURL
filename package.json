@@ -8,7 +8,7 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && gh-pages -d build -m \"Updates --skip-ci\""
+    "export": "next export"
   },
   "dependencies": {
     "@next/font": "13.0.7",
