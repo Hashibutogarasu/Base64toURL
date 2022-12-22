@@ -2,14 +2,14 @@
   "name": "base64tourl",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hashibutogarasu.github.io/Base64toURL-/",
+  "homepage": "https://hashibutogarasu.github.io/Base64toURL/",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@next/font": "13.0.7",
