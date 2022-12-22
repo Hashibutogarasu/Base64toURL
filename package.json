@@ -9,7 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d build -t true"
   },
   "dependencies": {
     "@next/font": "13.0.7",
